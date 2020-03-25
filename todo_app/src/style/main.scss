@@ -1,0 +1,142 @@
+html {
+    font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+p {
+    font-size: small;
+}
+
+h3, h5 {
+  margin: 10px;
+  color: white;
+  font-size: initial;
+}
+
+.status {
+    color: greenyellow;
+    margin: 15px;
+}
+
+.heading {
+    color: white;
+}
+
+.registration_form, .login_form {
+    padding: 15px;
+    margin: 22px;
+    background: lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.app {
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+    background: linear-gradient(to right, #26D0CE, #1A2980);
+}
+
+.form {
+    width: '100%',
+  }
+
+.container {
+  width: 80%;
+  height: 200px;
+  background: aqua;
+  margin: auto;
+  padding: 10px;
+}
+
+.login_form {
+  width: 50%;
+  float: left;
+}
+
+.registration_form {
+  float: right;
+  width: 40%;
+}
+
+.listOfCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.UserCard {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px black;
+  margin: 10px;
+  padding: 15px;
+  position: sticky;
+  left: 40%;
+  background: #0c2b5e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.UserCard img {
+  width: 130px;
+  height: 130px;
+  margin: 8px 0 0 0;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.UserCardTop {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.UserCardBottom {
+  margin: 10px;
+  overflow: auto;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0 10px 5px;
+  overflow-wrap: break-word;
+  font: 15px;
+  text-align: left;
+}
+
+.UserCardBottom::-webkit-scrollbar {width: 3px; height:1px;transition:all .5s;z-index:10;}
+.UserCardBottom::-webkit-scrollbar-track {background-color: #0c2b5e;}
+.UserCardBottom::-webkit-scrollbar-thumb {
+  background-color: #bec4c8; 
+  border-radius:3px;
+}
+
+.logout_button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
